@@ -1,0 +1,256 @@
+/* font-family: 'Space Mono', monospace; 
+ font-family: 'Inter', sans-serif; */
+
+* {
+    margin: 0;
+    font-variant-ligatures: none;
+    box-sizing: border-box;
+}
+
+/* Highlight/Selection */
+
+::selection {
+    color: #1B2793;
+    background: #ffff9d;
+}
+
+/* Negrito */
+
+b {
+    color: #1B2793;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+b:hover {
+    color: #D122EE;
+}
+
+/* Títulos da seção */
+
+.titulo-secao {
+    font-family: 'Space Mono', monospace;
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 4%;
+    color: #1E1F20;
+    transition: all 0.4s ease-in-out;
+}
+
+.titulo-secao:hover {
+    letter-spacing: 0.2em;
+}
+
+/* Texto dos cards */
+
+.titulo-card {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.paragrafo-card-maior {
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+}
+
+.paragrafo-card {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Links */
+
+a:link {
+    color: #A5A6F6;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:visited {
+    color: #A5A6F6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B2793;
+    text-decoration: none;
+} 
+
+a:active {
+    color: #D122EE;
+    text-decoration: none;
+}
+
+/* ---- HEADER ---- */
+
+.cabecalho {
+    background-color: #eff0ff;
+    background: radial-gradient(circle, rgba(209,34,238,0.48783263305322133) 0%, rgba(233,199,252,0.49343487394957986) 32%, rgba(239,240,255,1) 85%);
+}
+
+.barra-topo {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom: 2px solid;
+    border-color: #1E1F20;
+    background-color: transparent;
+    padding: 18px;
+}
+
+.imagens-cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+/* ---- SECTION BIOGRAFIA ---- */
+
+.biografia {
+    background-color: #A5A6F6;
+    border-top: 4px solid;
+    border-color: #1E1F20;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 5px solid #1E1F20;
+    box-shadow: -8px 8px 0px 0px #1E1F20;
+    border-radius: 16px;
+    background-color: white;
+    width: 75%;
+    margin-bottom: 20px;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+/* ---- SECTION FÍSICO E MENTAL ---- */
+
+.fisico-mental {
+    background-color: #A5A6F6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.container-titulo-isolado {
+    width: 40%;
+}
+
+.titulo-isolado {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2em;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1E1F20;
+ 
+}
+
+/* ---- SECTION QUALIDADES E DEFEITOS ---- */
+
+.container-qualidades-e-defeitos {
+    background-color: #FFE6E4;
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+    border-color: #1E1F20;
+
+    padding-top: 8%;
+    padding-bottom: 12%;
+
+}
+
+.container-02 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    
+    gap: 2%;
+
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+/* ---- SECTION SEUS PODERES ---- */
+
+.container-seus-poderes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+    background-color: #EFF0FF;
+}
+
+/* ---- SECTION HABILIDADES ---- */
+
+.container-habilidades {
+    background-color: #A5A6F6;
+    border-top: 4px solid;
+    border-color: #1E1F20;
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.conteudo-habilidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 0%;
+    
+}
+
+/* ---- RODAPÉ ---- */
+
+.rodape {
+    background-color: #1E1F20;
+    padding: 2%;
+}
+
+.paragrafo-rodape {
+    font-family: 'Space Mono', monospace; 
+    font-size: 12px;
+    text-align: center;
+    color: #D6D6D6;
+}
